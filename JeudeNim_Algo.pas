@@ -14,7 +14,7 @@ DEBUT:
 	TotalAllumettes <- 21;
 	AllumettesRetirees <- 0;
 
-	TANTQUE TotalAllumettes > 0 FAIRE
+	TANTQUE TotalAllumettes > 1 FAIRE
 		ECRIRE "Retirez un nombre d'allumettes entre 1 et 3.";
 		LIRE AllumettesRetirees;
 		SI AllumettesRetirees > 0 ET AllumettesRetirees < 4 ALORS;
@@ -26,3 +26,16 @@ DEBUT:
 	FINTANTQUE
 	ECRIRE "Vous avez perdu !"
 FIN.
+
+===================================================================================
+
+ALGORITHME JeudeNim_Algo2
+
+//But: Créer le jeu de Nim avec un joueur et un ordinateur.
+//Principe:
+
+//Entrée: Le nombre d'alumettes retirées.
+//Sortie: La quantitée d'allumettes restante.
+
+VAR:
+	
