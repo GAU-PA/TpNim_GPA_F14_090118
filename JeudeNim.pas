@@ -1,4 +1,4 @@
-PROGRAM	JeudeNim_2Joueurs;
+{PROGRAM	JeudeNim_2Joueurs;
 
 USES crt;
 
@@ -27,4 +27,27 @@ BEGIN
 	END;
 	writeln('Vous avez perdu !');
 	readkey;
-END. 
+END. }
+
+------------------------------------------------------------------------------------------
+
+PROGRAM JeudeNim_Ordi;
+
+USES crt;
+
+CONST
+	TotalAllumettes := 21 : Integer;
+	Fin := 1 :Integer;
+	AlluMax := 3 : Integer;
+	AlluMin := 1 :Integer;
+
+VAR
+	AllumettesRestantes, RetraitAllumettes : Integer;
+
+BEGIN
+	clrscr;
+
+	AllumettesRestantes := TotalAllumettes;
+	RetraitAllumettes := 0;
+	
+END.

@@ -1,4 +1,4 @@
-ALGORITHME: JeudeNim_Algo1
+ALGORITHME: JeudeNim_Algo_2Joueurs
 
 //But: Créer le Jeu de Nim pour qu'il soit jouable par 2 personnes.
 //Principe: 
@@ -6,10 +6,10 @@ ALGORITHME: JeudeNim_Algo1
 //Entrée: Le nombre d'alumettes retirées.
 //Sortie: La quantitée d'allumettes restante.
 
-VAR:
+VAR
 	TotalAllumettes, AllumettesRetirees : entier;
 
-DEBUT:
+DEBUT
 
 	TotalAllumettes <- 21;
 	AllumettesRetirees <- 0;
@@ -29,7 +29,7 @@ FIN.
 
 ===================================================================================
 
-ALGORITHME JeudeNim_Algo2
+ALGORITHME JeudeNim_Algo_Ordi
 
 //But: Créer le jeu de Nim avec un joueur et un ordinateur.
 //Principe:
@@ -37,5 +37,19 @@ ALGORITHME JeudeNim_Algo2
 //Entrée: Le nombre d'alumettes retirées.
 //Sortie: La quantitée d'allumettes restante.
 
-VAR:
+CONST
+	TotalAllumettes <- 21 : entier;
+	Fin <- 1 : entier;
+	AlluMax <- 3 : entier;
+	AlluMin <- 1 : entier;
+
+VAR
+	AllumettesRestantes, RetraitAllumettes : entier;
+
+DEBUT
 	
+	AllumettesRestantes <- TotalAllumettes;
+	RetraitAllumettes <- 0;
+
+	
+FIN.
